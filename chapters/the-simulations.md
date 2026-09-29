@@ -302,13 +302,13 @@ cargo run --release -p viz --bin gen_synthesis -- "$(git rev-parse --short HEAD)
 
 - warp-1 1.5 — lattice-matched isotropy
 - 7.1 — the fair dial's unevenness is exact, and fairness and roundness are two knobs
-- 8.14 and 8.18 — exactly round positive settings at finer grain, and the cost of roundness measured
+- 8.14 and 8.18 — exactly round positive settings at finer resolution, and the fairest of them priced
 - warp-1 1.7 — blind dispersion in five directions
 - warp-3 3.5 — the demo's mesh asymmetry, and its repair
 
-**Two readings of the fair dial, kept together.** Rung 7.1's **3/5** is the uniform setting's cone anisotropy on the *rule graph* — the pattern of lines that meets at a dot of the Container — and its finding that no positive reweighting of that pattern nulls it stands. That is the one number the chapter quotes, and it is worked out exactly where the chapter's 22.4% and 2.2% were timed on the Container's plainer relative.
+**Two readings of the fair dial, kept together.** Rung 7.1's **3/5** is the uniform setting's cone anisotropy on the *rule graph* — the pattern of lines that meets at a dot of the Container — and its finding that no positive reweighting of that pattern nulls it stands. That is the one number the chapter quotes, and it is a different measure from the chapter's 22.4% and 2.2%, which were timed on the Container's plainer relative.
 
-Rungs 8.14 and 8.18 then asked the same question at the mesh's true resolution and found positive settings that are exactly round (derived from the geometry, not searched), and measured what the roundest of them costs in the record's own fairness functional: **0.086%** of it. The ledger's own words are that both statements coexist; the chapter says *two different knobs* and leaves the price of the trade to this page. Nowhere does the book call the record's spectral quantity an entropy of anything but the toy's graph — the record's fence on it is *never a physical entropy*, and the prose keeps the word out.
+Rungs 8.14 and 8.18 then asked the same question at the mesh's true resolution and found positive settings that are exactly round (derived from the geometry, not searched). 8.18 fixed exact roundness and asked for the fairest setting that keeps it: that one gives up **0.086%** of the record's own fairness measure against the uniform dial. The ledger's own words are that both statements coexist; the chapter says *two different things to ask of one setting* and leaves the price of asking for both to this page. Nowhere does the book call the record's spectral quantity an entropy of anything but the toy's graph — the record's fence on it is *never a physical entropy*, and the prose keeps the word out.
 
 **Lab entries.** Each carries its own `spec.md` (the question, registered first), `eval.md` (the verdict) and `PROVENANCE.md`.
 

@@ -69,8 +69,8 @@ One line is enough. Commit to a direction.
 Ours — one for this setting, one for the next — are in the record from before the run; neither
 said which way, so this half is yours alone.
 
-This is the ritual for the rest of the book, and it is not a teaching trick. Once you have read a
-number it is hard to remember not having known it.
+This is the ritual for the rest of the book. Once you have read a number it is hard to remember not
+having known it.
 
 ## The obvious setting
 
@@ -92,7 +92,8 @@ its arrival along an edge direction, time its arrival along a diagonal, and comp
 If the ring were round they would be equal. They differ by **22.4%**.
 
 **[Open the data-true rings](record/lab/warp-1-move/0115-lattice-matched-isotropy/figures/isotropy.html)**
-— two rings, one per setting. The lopsided one is this section's; the other is the next section's.
+— two rings, one per setting. The lopsided one is this section's; the round one comes two sections
+on.
 
 Couldn't we just be fairer about it?
 
@@ -100,10 +101,11 @@ Couldn't we just be fairer about it?
 
 <!-- beat the-round-ripple.5 -->
 
-No. The record tried the tempting repair — nudge the even weights until the ring comes round — on
-the Container itself this time, on the pattern of lines that meets at every dot. Worked out exactly
-rather than timed, the fair setting's unevenness there is **3/5**, and no nudging of positive
-weights takes it to zero. Fairness and roundness are two different knobs.
+No. We tried the tempting repair — nudge the even weights until the ring comes round — on the
+Container itself this time, on the pattern of lines that meets at every dot, and the record has it.
+Not the timed measure; an exact one: that pattern's lopsidedness is **3/5**, and no nudge that
+keeps every line counting takes it to zero. Fair and round are two different things to ask of one
+setting.
 
 So set it from the shape.
 
@@ -112,7 +114,7 @@ So set it from the shape.
 <!-- beat the-round-ripple.6 -->
 
 Measure the pieces of the object and weight each line by what it actually is. Same dial, same
-settings, no new machinery — a reading taken from the thing rather than assumed.
+settings — a reading taken from the thing rather than assumed.
 
 The two speeds now differ by **2.2%**: about ten times less.
 

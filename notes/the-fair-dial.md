@@ -6,7 +6,7 @@
 
 # The fair dial — what the record already says about "everything at once"
 
-Lane note, not chapter text. No issue yet.
+Lane note, not chapter text. Delivery: branch `book/the-fair-dial-beat`.
 
 FIREWALL: this is a reading of arithmetic on a toy DEC lattice. Nothing here is a claim about
 nature, and the section *What may not be said* is the longer half of this note on purpose.
@@ -26,8 +26,9 @@ Three sentences, in the owner's order:
 
 | # | the claim, as put | verdict | what decides it |
 |---|---|---|---|
-| 1 | the abyss is *every possibility, none preferred*, not *nothing* | **TRUE of the toy, and already in the record** — as the *uniform dial* | `⋆ = I`, every line the same weight, is glossed in the engine as "the uniform / max-entropy prior" (UniForge `docs/BRIDGE.md:32`, not in the snapshot; a pointer). The book already says "empty" is "a very long list of possible vibrations" ([`where-negative-energy-appears.md`](../chapters/where-negative-energy-appears.md), beat 2) |
+| 1 | the abyss is *every possibility, none preferred*, not *nothing* | **TRUE of the toy, and already in the record** — as the *uniform dial* | `⋆ = I`, every line the same weight, is glossed in the engine as "the uniform / max-entropy prior" (UniForge `docs/BRIDGE.md:32`, not in the snapshot; a pointer). The book already says "empty" is "a very long list of possible vibrations" (`where-negative-energy-appears.2`) |
 | 2a | the shared world is *special* | **TRUE of the toy, in one exact sense** — the fair setting is *not* the round one | rung 1.5: the uniform dial gives a ring lopsided by **22.4%**; the dial set from the geometry gives **2.2%** ([`record/PREDICTIONS.md:27`](../record/PREDICTIONS.md)). Rung 7.1: the uniform dial's anisotropy is **exactly 3/5** and *no positive reweighting can null it* ([`record/PREDICTIONS.md:60`](../record/PREDICTIONS.md)) |
+| 2c | *so no fair setting is round* — the reading 2a invites | **REFUSED at finer resolution, and priced** | rungs 8.14 and 8.18 ([`record/PREDICTIONS.md:81,88`](../record/PREDICTIONS.md)): at the mesh's true resolution there are positive settings that are *exactly* round, derived from the geometry; 8.18 fixed exact roundness and found the fairest setting that keeps it — it gives up **0.086%** of the record's fairness measure. The ledger: *both statements coexist*. So 7.1 says fair is not round; 8.18 says round costs almost no fairness |
 | 2b | the shared world is *static* | **TRUE of the toy, as conservation, not as stillness** | the total of the numbers is conserved exactly, from rest, for ever (`napkin` crate, pinned by `engine.lock`; `make-it-move` beat: "nothing leaks away, so nothing runs down"). A wrapped world has no outside to leak into ([`room-and-a-world-with-no-edge.md`](../chapters/room-and-a-world-with-no-edge.md)). The ripple still moves; what holds still is the sum |
 | 3 | "our galactic entropy is 1" | **REFUSED, twice** | (i) it names the world — the guard's `NATURE_SUBJECT` veto reaches it and no toy noun buys an exemption; (ii) as arithmetic, one allowed configuration is `S = k ln 1 = 0`, not 1. The `1` that is true is probability summing to 1, which is not an entropy |
 | — | *entropy* as the word for any of this | **REFUSED in prose** | the engine's own fence on the number it computed: "a 🔵 graph constant (spectral math), never a physical entropy" (rung 7.1). The word appears in no chapter today and should not enter through this note |
@@ -42,7 +43,7 @@ preferred, nothing is ruled out, every direction is as good as every other. That
 abyss in the book's own vocabulary, and it needs no new word: *the setting where nothing is
 preferred*.
 
-[`the-round-ripple.md`](../chapters/the-round-ripple.md) beat 4, *The obvious setting*, already
+[`the-round-ripple.md`](../chapters/the-round-ripple.md) `the-round-ripple.4`, *The obvious setting*, already
 turns that dial first and reports the answer: "Set every line to the same weight and the ring comes
 out **lopsided**." So the direction the owner is asking for is not a new chapter. It is a
 *reading* of a beat the book already has, and the reading is stronger than the beat currently
@@ -57,7 +58,7 @@ bridge survives as a dictionary, not a variational principle."
 
 That is the sentence the owner is reaching for, computed. *Everything equally possible* does not
 give you a world that behaves the same in every direction. A round world is one particular
-setting, read off the geometry — a choice, which is what beat 5, *The same dial, set from the
+setting, read off the geometry — a choice, which is what `the-round-ripple.6`, *The same dial, set from the
 geometry*, then makes. The book's habit of marking a choice as a choice ("That decision is not read
 off the object") carries the beat.
 
@@ -119,14 +120,14 @@ already carries it.
 Inserting a chapter would also shift every `## N` in `OUTLINE.md` and every appendix section, for
 a beat that already has a home.
 
-**One beat, in *Is it round?*, between beats 4 and 5 — or folded into 4.** The reader has just
+**One beat, in *Is it round?*, after `the-round-ripple.4`.** The reader has just
 turned the fair dial and seen 22.4%. The beat to add is the one she will ask for: *can't we fix that
-by being fairer still?* No — and the record has the number: **3/5**, un-nullable. Then beat 5 lands
+by being fairer still?* No — and the record has the number: **3/5**, un-nullable. Then the geometry beat lands
 harder, because *set from the geometry* is now visibly the only route that worked, said of the
 dial. The rung 7.1 sentence is at `record/PREDICTIONS.md:60` at the pinned commit, so it enters as a
 `record_quote` with no record bump. A ✎ is already in the chapter; this beat sits after it.
 
-**One sentence, in *Can a gap be emptier than empty?*** The chapter already says "empty" is a
+**One sentence, in *Can a gap be emptier than empty?*** `where-negative-energy-appears.2` already says "empty" is a
 long list of possibilities and that walls remove some. The owner's phrasing — *not nothing:
 everything, none preferred* — is a tightening of beat 2, not an addition.
 
@@ -167,3 +168,23 @@ tetrahedron drawn only by `tools/canon.py`. Two studies this note names as the f
 Until a replacement lands, the reference files stay untracked. They were moved out of
 `chapters/assets/` to `reference/image-tests/` (2026-09-28), a folder the build does not walk and
 `.gitignore` excludes, so `figures.mjs --check-rendered` never meets them by accident.
+
+---
+
+### What was written (2026-09-28, branch `book/the-fair-dial-beat`)
+
+One beat, **`the-round-ripple.5` — *Couldn't we just be fairer?***, between the fair setting and the
+setting read from the shape; the beats after it moved up one by `tools/renumber_beats.py`. It quotes
+rung 7.1's **3/5** and says, in the chapter's own words, that fair and round are two different
+things to ask of one setting. It quotes nothing else: 8.14 and 8.18 are named in the appendix note
+for the chapter, with the 0.086% and the right way round — the *fairest of the exactly round*
+settings gives up that much, which a first draft of this note and of the beat had inverted (a
+proofreader, 2026-09-28). The lane note's "fourteen neighbours" did not enter the prose either: the
+book has never built that count, and *fourteen dots* in `two-worlds-threaded` is a different
+fourteen. The word *entropy* appears in no chapter.
+
+The branch merged `origin/main` at `bd31760` before its proof-read, which is where the abyss primer
+and tranche H's *plainer relative* came from; the beat was re-applied on the pivot's text and now
+opens on the record putting the same question to the Container itself. `main`'s chapter stood
+eleven words under the 1800 ceiling, so seven small cuts to sentences that restated a point pay for
+the beat; the PR lists each.
