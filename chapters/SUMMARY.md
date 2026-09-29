@@ -1,9 +1,11 @@
 # Summary
 
 - [What you will have](what-you-will-have.md)
+- [Boundaries](start-at-the-boundaries.md)
 - [Where the inside shows](where-the-inside-shows.md)
 - [The shadow](the-shadow.md)
 - [A few thousand years of sharper shadows](a-few-thousand-years-of-sharper-shadows.md)
+- [Staring into the abyss](staring-into-the-abyss.md)
 - [Two dots, a line, and the first thing that closes](two-dots-and-a-line.md)
 - [One tetrahedron is a whole world](one-tetrahedron-is-a-whole-world.md)
 - [Make it move](make-it-move.md)
@@ -15,7 +17,7 @@
 - [Can you wall a piece off?](the-wall-that-worked-and-didnt.md)
 - [Can a gap be emptier than empty?](where-negative-energy-appears.md)
 - [Can it tell me something I didn't tell it?](a-number-without-the-answer-key.md)
-- [When the world you built says no](when-the-expected-law-fails.md)
+- [The law we were sure of](when-the-expected-law-fails.md)
 - [Cast your own shadow](cast-your-own-shadow.md)
 
 ---

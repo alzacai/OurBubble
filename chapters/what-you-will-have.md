@@ -4,7 +4,7 @@
 > when we pointed real tests at it. Nothing here is a claim about nature. Where a chapter uses a word
 > like *vacuum*, the word names a pattern in the model.
 
-This is the one page that talks about the book instead of doing it. If a section ever loses you,
+This is the page that talks about the book instead of doing it. If a section ever loses you,
 there is a link under its heading for telling us so; it needs a free GitHub account, the only thing
 anywhere in here that asks you to sign up for something. A short read, and then we begin.
 
@@ -33,7 +33,7 @@ exterior calculus* — and you may put it straight back down. You will not need 
 <!-- beat what-you-will-have.2 -->
 
 By the last page you will have the ideas themselves, not a rumour of them: a world you can hold in
-your head and count; the one rule everything here is made of; why the tick a world runs on belongs
+your head and count; the one rule that world runs on; why the tick a world runs on belongs
 to its shape; a machine's honest *no*, told apart from a mistake; and a path from any number we
 produced to where it came from — a file in the record, or arithmetic done in front of you.
 
@@ -51,16 +51,15 @@ physics word names a feature of it.
 
 <!-- beat what-you-will-have.3 -->
 
-First, why measuring gets done at edges. Then the shadow, and what everyone else did with one: the
-same method for a few thousand years, no cleverer and much sharper. Then a run of chapters on a
-napkin. Two dots and a line, then a triangle, then the smallest solid there is — which turns out to
-be a whole world: every kind of number in it, and a setting for what each line counts. Then we make
-it move, by hand.
+First a puzzle, then why measuring gets done at edges. Then the shadow, and what everyone else did
+with one: the same method for a few thousand years, sharper and sharper. Then chapters on a napkin. Two dots and a line, then a triangle, then the smallest solid there is, which turns out to
+be a whole world. Then we make it move, by hand.
 
 Then the napkin runs out. The smallest world with any room in it needs arithmetic no hand can do, so
 the same rule goes to a machine, unchanged — on a world with no edge.
 
-The rest is what came back. A ripple lopsided until one setting fixed it. What it costs to push on a
+The rest is what came back — from plainer worlds like it, each named when it arrives, and once from
+a small model of switches, not ripples. A ripple lopsided until one setting fixed it. What it costs to push on a
 piece of it. A wall that worked, and hopes that did not. A gap emptier than empty. A measurement
 with its answer key taken away, a law that came back refused, and misses that were in our reading,
 not in the world. The noes are given the same room as the yeses: a machine that can only agree with
@@ -81,11 +80,12 @@ down. That pause is the method, performed instead of described, and it works onl
 Sticks and light, dots and lines. That is what we have had since the first shadows on a cave wall,
 is all this book uses, and enough for everything in here.
 
-We start closer to hand than a shadow: an egg on a table, and a claim about where measuring gets
-done — worth holding lightly until you have done it yourself.
+We start at a table, with a jigsaw that has no picture on it, and the place anyone who has done one
+begins: its edge. Then an egg, and a claim about where measuring gets done — worth holding lightly
+until you have done it yourself.
 
 *What this page cites — and what it does not:
 [the simulations](the-simulations.md#s-what-you-will-have).*
 
-**Next:** [Where the inside shows](where-the-inside-shows.md)—why measurements get made at edges,
-and what this book will put in your hands about them.
+**Next:** [Boundaries](start-at-the-boundaries.md)—a puzzle with no picture on it, and why the
+edge pieces come out of the box first.

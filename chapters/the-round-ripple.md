@@ -6,8 +6,13 @@
 
 <!-- beat the-round-ripple.1 -->
 
-You have the object and you have the question: poke it, and see whether the front travels at the
-same speed in every direction.
+You have the object and you have the question: poke a world like it, and see whether the front
+travels at the same speed in every direction.
+
+The world the record poked is the Container's plainer relative: the same cubes, each cut into six
+tetrahedra instead of two-coloured, so its grain is three kinds of line where the Container's is
+three kinds of place. For this run it kept its edges and finished before the echo came back. The
+dial has the same job on both.
 
 Speed is a distance divided by a time. Look at what you are actually holding, and one of those two
 is in your hand and the other is not.
@@ -21,8 +26,9 @@ Which half is missing?
 Time you have. Ticks, all the same size, and you can count them — that is what the clock was for.
 
 Distance you do not have. Not because it is hard to measure, but because nothing in the object has
-ever been given a length. The dial exists; you met it on one tetrahedron and have already turned
-it once and watched the rhythm change. But nobody has ever set it from anything real. It has been a knob with no reading on it.
+been given a length. The dial exists; you met it on one tetrahedron, six lines and six settings, and
+you have turned one of them and watched the rhythm change. But nobody has set it from anything real.
+It has been a knob with no reading on it.
 
 So before the world can be asked how fast, somebody has to say how far.
 
@@ -32,17 +38,16 @@ Doesn't counting steps already do that?
 
 <!-- beat the-round-ripple.2 -->
 
-Why not? Because "count the lines you crossed" sounds exactly like a ruler.
+Go back to the cube the world is built from. In the relative the record ran, its lines run three
+ways: along the cube's edges, across its faces, and through its middle from corner to corner. In the
+Container you built, a line is a face diagonal or the long axis of a shape between. Either way some
+lines are longer than others, and you can see it on the cube.
 
-Go back to how the object was built: the eight corners of a cube, sorted odd and even. Some of the
-lines in the finished thing run along the edges of those cubes. Others cut across their diagonals.
-And a diagonal is longer than an edge — you can see that on the cube in front of you.
-
-But to the *counting*, both are one line. One step along an edge and one step across a diagonal are
+But to the *counting*, every line is one line. A step along an edge and a step across a diagonal are
 both "one step". So a front that has crossed four lines might have gone four edges or four
 diagonals, and those are not the same distance, and nothing has told the object which.
 
-That is the dial's whole job: to say what each line is worth. Which means the answer to *is it
+That is the dial's job: to say what each line is worth. Which means the answer to *is it
 round* depends on a setting, and the setting has not been chosen yet.
 
 So choose the obvious one, and guess what happens.
@@ -52,17 +57,20 @@ So choose the obvious one, and guess what happens.
 <!-- beat the-round-ripple.3 -->
 
 The obvious setting is to give every line the same weight. It feels like the neutral choice — the
-one that assumes nothing, that plays no favourites among the lines.
+one that assumes nothing.
 
 **Write your guess down now** — and the useful half is not whether it comes out round. You have just
 been told an edge and a diagonal differ in length and the counting cannot tell, so *not round* is
 the easy call.
 
-The live question is **which way**: along the cube's edges, or across its diagonals? One line is
-enough. Commit to a direction.
+The live question is **which way**: along the cube's edges, or corner to corner through its middle?
+One line is enough. Commit to a direction.
+
+Ours — one for this setting, one for the next — are in the record from before the run; neither
+said which way, so this half is yours alone.
 
 This is the ritual for the rest of the book, and it is not a teaching trick. Once you have read a
-number it is very hard to remember not having known it.
+number it is hard to remember not having known it.
 
 ## The obvious setting
 
@@ -70,16 +78,16 @@ number it is very hard to remember not having known it.
 
 Set every line to the same weight and the ring comes out **lopsided**.
 
-It runs faster across the cube's diagonals than along its edges — so if you guessed the diagonals,
-you were right, and for the reason the last section gave: the counting treats a long step and a
-short one alike, so the long one covers more ground per tick. Anything you aimed in this world
-would drift.
+It runs faster corner to corner through the cube than along its edges — so if you guessed corner to
+corner, you were right, and for the reason the last section gave: the counting treats a long step
+and a short one alike, so the long one covers more ground per tick. Anything you aimed in this
+world would drift.
 
-Notice what happened. Weighting all the lines equally *looked* like assuming nothing; it was a
+Weighting all the lines equally *looked* like assuming nothing; it was a
 strong assumption, quietly made — that an edge and a diagonal are the same length. The object never
-said that. We did, by choosing the setting that felt neutral.
+said that. We did.
 
-Send a pulse from the middle, time
+Here is the number. Send a pulse from the middle, time
 its arrival along an edge direction, time its arrival along a diagonal, and compare the two speeds.
 If the ring were round they would be equal. They differ by **22.4%**.
 
@@ -92,13 +100,10 @@ Couldn't we just be fairer about it?
 
 <!-- beat the-round-ripple.5 -->
 
-No. The record tried the tempting repair — nudge the even weights here and there until the ring
-comes round — on the pattern of fourteen neighbours every dot sees. Worked out exactly rather than
-timed, the fair setting's unevenness there is **3/5**, and no nudging of positive weights takes it
-to zero. Fairness and roundness are two different knobs.
-
-At finer grain the record later found the roundest setting reachable from the fair one, and its
-cost in fairness: **0.086%**. Distinct knobs; the trade nearly free.
+No. The record tried the tempting repair — nudge the even weights until the ring comes round — on
+the Container itself this time, on the pattern of lines that meets at every dot. Worked out exactly
+rather than timed, the fair setting's unevenness there is **3/5**, and no nudging of positive
+weights takes it to zero. Fairness and roundness are two different knobs.
 
 So set it from the shape.
 
@@ -111,12 +116,12 @@ settings, no new machinery — a reading taken from the thing rather than assume
 
 The two speeds now differ by **2.2%**: about ten times less.
 
-Both predictions were written down before either run — that the naive setting would be *obviously*
-uneven, and that the geometric one would at least halve it. That matters more than the numbers do,
-and it is the step people skip.
+What we wrote down before either run was that the obvious setting would be plainly uneven, and that
+the reading from the shape would at least halve it. That matters more than the numbers do, and it is
+the step people skip.
 
-The rounder ring in the earlier figure is this one; the pair is the difference between an
-assumption and a reading.
+The rounder ring in that figure is this one: the pair is the difference between an assumption and
+a reading.
 
 But 2.2% is not zero. What is it?
 
@@ -124,28 +129,29 @@ But 2.2% is not zero. What is it?
 
 <!-- beat the-round-ripple.7 -->
 
-A sceptic should push on the residual, and there are exactly two things it could be: the world
-really is slightly uneven, or the grid is too coarse to draw a smooth circle on.
+A sceptic should push on the residual, and there are two things it could be: the world is slightly
+uneven, or the grid is too coarse to draw a smooth circle on.
 
-Those sound like the same complaint. They are not, and telling them apart needs no judgement.
+They are not the same complaint, and telling them apart needs no judgement.
 
-A coarse grid gets *better* as you use bigger, gentler ripples: a long, lazy wave stops noticing the
-graininess underneath it, the way a wide boat stops noticing small chop. A genuine unevenness does
+A coarse grid gets *better* with bigger, gentler ripples: a long, lazy wave stops noticing the
+graininess underneath it. A genuine unevenness does
 nothing of the kind — it is there at every scale, because it is a property of the geometry rather
 than of the resolution.
 
-So the test writes itself. Make the ripples gentler and see whether the disagreement shrinks. Could
-a machine run that test without anyone's thumb on the scale?
+So the test writes itself: make the ripples gentler and see whether the disagreement shrinks. Could a
+machine run it without anyone's thumb on the scale?
 
 ## Hand it to something that cannot hope
 
 <!-- beat the-round-ripple.8 -->
 
-It can, and this is where the book acquires the instrument it uses for the rest of its length.
+It can, and this is where the book acquires an instrument it uses again.
 
-Run the sweep again in five directions at once and hand the timings to a blind fitter: a program
-told nothing about what it is looking at. It picks from a menu written down beforehand and reports
-how far ahead of the runner-up it finished.
+Run the sweep again — on the same relative, wrapped this time — in five directions at once and hand
+the timings to a blind fitter: a program
+told nothing about what it is looking at. It picks
+from a menu written down beforehand and reports how far ahead of the runner-up it finished.
 
 It picked the straight-line law in all five directions, and by a wide margin: its score beat the
 runner-up — a square-root law — by about a quarter every time.
@@ -164,18 +170,17 @@ Could a picture be lopsided because of the instrument itself?
 
 <!-- beat the-round-ripple.9 -->
 
-It could, and it was — on a page of ours anyone could open: the child in the yard with the stick,
-turned around on us.
+It could, and it was — on a page of ours anyone could open. A detour before the chapter closes: it
+is the child in the yard with the stick turned around on us.
 
-There is a public demonstration page: a ripple through two gaps, making bands on the far side. It
+There is a public demonstration page: a ripple through two gaps, making bands on the far side, and it
 ran that way for months. The scene is mirror-symmetric by construction — two identical gaps, one
 centred source, nothing in it that prefers a side — so the halves of the picture should have
 matched. One came out **3.8×** brighter than the other.
 
-That is a mark, in the sense her two scratches in the dirt were marks: a number nobody chose, that
-the thing itself put there. And like hers it is mute. Two readings fit it equally well. Either what
-the ripple does at the gaps really is lopsided, or the thing doing the measuring is, and the picture
-is faithfully reporting the shape of what it travelled on rather than the shape of the question.
+That is a mark, in the sense her two scratches in the dirt were: a number nobody chose. And like
+hers it is mute. Two readings fit it equally well. Either what
+the ripple does at the gaps really is lopsided, or the thing doing the measuring is.
 
 Which one? The readings differ, so a test can tell them apart.
 
@@ -183,14 +188,13 @@ Which one? The readings differ, so a test can tell them apart.
 
 <!-- beat the-round-ripple.9 -->
 
-Cutting a square into triangles means choosing which way the diagonals lean. Lean them all one
-way, then flip the scene about the axis through the source and between the gaps: the scene lands on
+The demo's world is flat — a sheet of squares cut into triangles, not the Container — and cutting a
+square into triangles means choosing which way the diagonals lean. Lean them all one way, then flip the scene about the axis through the source and between the gaps: the scene lands on
 itself and the mesh does not. So the mesh is the suspect: it had been asserting a left-right
 difference the question never did.
 
-Note what this is *not*: not the object's own three-way grain, whose symmetry carries each kind of
-place onto the others. This was a drawing choice in one demo that broke a mirror the experiment
-needed.
+This is a different thing from a world's own grain, whichever kind it has: a drawing choice in one
+demo broke a mirror the experiment needed.
 
 The correction is as small as the fault: alternate the diagonals, so mirroring the mesh lands on
 itself. Same scene, same solver, nothing else touched. The two halves now disagree by **5×10⁻¹⁵** of
@@ -200,8 +204,7 @@ themselves — numerical noise. Suspect confirmed, by a run and not a story.
 — the same scene on both meshes, side by side.
 
 The switch between the two meshes was left in [the demo page](record/viz/doubleslit.html) rather
-than quietly removed — a defect of ours kept beside its repair, because roundness and mirrors get
-tested before later results are read.
+than quietly removed: a defect of ours, kept beside its repair.
 
 So what did the chapter settle?
 
@@ -209,19 +212,18 @@ So what did the chapter settle?
 
 <!-- beat the-round-ripple.10 -->
 
-Not that the little world has light in it. It does not.
+Not that the little world has light in it.
 
-Two things, and everything after this depends on both.
 **One setting decides whether the world behaves the same way in every direction** — and that setting
 is a choice somebody makes, not a fact the object hands over. And
 **we can tell a coarse grid from a broken geometry**, by whether the disagreement shrinks when the
 ripples get gentler.
 
-Go and look at your guess now. Whichever way it went, you know something about the dial that you
-could not have known by being told.
+Go and look at your guess. Whichever way it went, you know something about the dial you could not
+have been told.
 
-Calibration is not a world with nothing left in it. It is a world whose remaining unevenness has
-been measured, and whose symmetries have been checked rather than assumed. This one steers true
+Calibration is a world whose remaining unevenness has been measured, and whose symmetries have been
+checked rather than assumed. This one steers true
 enough to measure with — so measure with it.
 
 *What this chapter cites — and what it does not:
