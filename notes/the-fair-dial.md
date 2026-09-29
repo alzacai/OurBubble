@@ -61,9 +61,10 @@ setting, read off the geometry — a choice, which is what beat 5, *The same dia
 geometry*, then makes. The book's habit of marking a choice as a choice ("That decision is not read
 off the object") carries the beat.
 
-What "special" honestly means here: not *rare*, not *lucky*, not *chosen for us*. **Set.** The
-round ring is what you get when somebody sets the dial, and the lopsided ring is what you get when
-nobody does.
+What "special" honestly means here is **set**. The round ring is what you get when somebody sets
+the dial, and the lopsided ring is what you get when nobody does. The one comparison worth making
+is with *lucky*: a lucky setting would be one among many that happened to work, and this is the
+one setting the shape itself reads out.
 
 ## 3 · "Static" is conservation, not stillness
 
@@ -104,9 +105,19 @@ eight proof-read rounds closed.
 
 ## What these numbers should be spent on
 
-**Not a chapter 0.** The book has one, and its front door is about the reader, deliberately
-without cosmology. Inserting a chapter shifts every `## N` in `OUTLINE.md` and every appendix
-section, for a beat that already has a home.
+**Not a new chapter, and not a change to the primer.** The book already opens on the reader
+(*What you will have*) and already has the owner's abyss: *Staring into the abyss* (PR #102,
+2026-09-07), a primer reflowed from the owner's own scene — the house a block from the ocean, the
+void, and zero as the first mark. That primer's abyss is *Nothing — the one place a first mark
+could go*. The proposal read here is a **second reading of the same scene** — the abyss as
+*everything, none preferred* — and the two are different objects: a blank page, and an even
+setting of a dial. The book should keep them apart. Under `EDITION_STANDARD.md` § *A primer* a
+drafter reflows the owner's words and adds no experience, so if the second reading belongs in the
+primer, the owner writes it there; this note only records that it is available and where the toy
+already carries it.
+
+Inserting a chapter would also shift every `## N` in `OUTLINE.md` and every appendix section, for
+a beat that already has a home.
 
 **One beat, in *Is it round?*, between beats 4 and 5 — or folded into 4.** The reader has just
 turned the fair dial and seen 22.4%. The beat to add is the one she will ask for: *can't we fix that
