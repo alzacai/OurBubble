@@ -92,8 +92,8 @@ its arrival along an edge direction, time its arrival along a diagonal, and comp
 If the ring were round they would be equal. They differ by **22.4%**.
 
 **[Open the data-true rings](record/lab/warp-1-move/0115-lattice-matched-isotropy/figures/isotropy.html)**
-— two rings, one per setting. The lopsided one is this section's; the round one comes two sections
-on.
+— two rings, one per setting. The lopsided one is this section's; the round one belongs to the
+setting read from the shape.
 
 Couldn't we just be fairer about it?
 
@@ -102,9 +102,9 @@ Couldn't we just be fairer about it?
 <!-- beat the-round-ripple.5 -->
 
 No. We tried the tempting repair — nudge the even weights until the ring comes round — on the
-Container itself this time, on the pattern of lines that meets at every dot, and the record has it.
-Not the timed measure; an exact one: that pattern's lopsidedness is **3/5**, and no nudge that
-keeps every line counting takes it to zero. Fair and round are two different things to ask of one
+Container itself this time, at the pattern of lines meeting at every dot, and the record has it.
+The number there is worked out exactly, not timed: that pattern's lopsidedness is **3/5**, and no
+nudge of the kind we tried takes it to zero. Fair and round are two different things to ask of one
 setting.
 
 So set it from the shape.
@@ -114,16 +114,16 @@ So set it from the shape.
 <!-- beat the-round-ripple.6 -->
 
 Measure the pieces of the object and weight each line by what it actually is. Same dial, same
-settings — a reading taken from the thing rather than assumed.
+run — a reading taken from the thing rather than assumed.
 
-The two speeds now differ by **2.2%**: about ten times less.
+The two speeds now differ by **2.2%** — a tenth of the obvious setting's gap.
 
 What we wrote down before either run was that the obvious setting would be plainly uneven, and that
 the reading from the shape would at least halve it. That matters more than the numbers do, and it is
 the step people skip.
 
-The rounder ring in that figure is this one: the pair is the difference between an assumption and
-a reading.
+The rounder of the two data-true rings is this one: the pair is the difference between an
+assumption and a reading.
 
 But 2.2% is not zero. What is it?
 
@@ -148,15 +148,15 @@ machine run it without anyone's thumb on the scale?
 
 <!-- beat the-round-ripple.8 -->
 
-It can, and this is where the book acquires an instrument it uses again.
+It can, and here the book acquires an instrument it uses again.
 
 Run the sweep again — on the same relative, wrapped this time — in five directions at once and hand
 the timings to a blind fitter: a program
 told nothing about what it is looking at. It picks
 from a menu written down beforehand and reports how far ahead of the runner-up it finished.
 
-It picked the straight-line law in all five directions, and by a wide margin: its score beat the
-runner-up — a square-root law — by about a quarter every time.
+It picked the straight-line law in all five directions: scored out of 1, it made **0.9996** or
+better every time; the runner-up, a square-root law, about **0.754**.
 The speed it returned agrees across directions to within a couple of percent, and that spread
 *shrinks* as the ripples get gentler. Which is the signature of a coarse grid.
 
@@ -213,8 +213,6 @@ So what did the chapter settle?
 ## What this chapter settled
 
 <!-- beat the-round-ripple.10 -->
-
-Not that the little world has light in it.
 
 **One setting decides whether the world behaves the same way in every direction** — and that setting
 is a choice somebody makes, not a fact the object hands over. And
