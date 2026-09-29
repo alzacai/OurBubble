@@ -141,11 +141,12 @@ reader every time instead of explained to her once.
 2. Doesn't counting steps give me distance?  *(a step along a cube's edge and a step across its diagonal are both "one step" — until the dial says otherwise)*
 3. ✎ *Before we look:* if I give every line the same weight, will the ring be round?
 4. What does the ring do on the "obvious" setting?  *(lopsided: 22.4% between directions)*  [picture: the two rings]
-5. What if I weight the lines by their real geometry — the same dial, set from the shape?  *(round to 2.2%)*
-6. Is 2.2% the world being slightly uneven, or my grid being coarse — how could I tell?  *(a coarse grid improves with gentler ripples; a wrong geometry does not)*
-7. Could a machine decide that without my thumb on the scale?  *(hand it the timings and a written menu of laws; it picks, and says by how much)*  [picture: the fit, the runner-up]
-8. *An interlude:* could a picture be lopsided because of the instrument itself?  *(the public demo ran 3.8× lopsided on a mirror-symmetric scene — a mark with two readings; mirroring the mesh picks one, alternating the diagonals leaves 5×10⁻¹⁵, and the switch was left in the demo page rather than quietly removed. Carried by two adjacent sections: the mark and its two readings, then the test and the correction)*  [demo]
-9. What did this chapter actually settle, and can I measure with this thing?  *(one dial decides whether the world behaves the same every way; we can tell coarse from broken; and that is what calibration is — the unevenness measured, the symmetries checked)*
+5. Couldn't I just be fairer — nudge the even weights until the ring comes round?  *(no: on the fourteen-neighbour pattern every dot sees, the fair setting's unevenness is exactly 3/5 and no positive reweighting nulls it — fairness and roundness are two knobs; and the roundest setting reachable from the fair one gives up 0.086% of its fairness, so the trade is nearly free)*
+6. What if I weight the lines by their real geometry — the same dial, set from the shape?  *(round to 2.2%)*
+7. Is 2.2% the world being slightly uneven, or my grid being coarse — how could I tell?  *(a coarse grid improves with gentler ripples; a wrong geometry does not)*
+8. Could a machine decide that without my thumb on the scale?  *(hand it the timings and a written menu of laws; it picks, and says by how much)*  [picture: the fit, the runner-up]
+9. *An interlude:* could a picture be lopsided because of the instrument itself?  *(the public demo ran 3.8× lopsided on a mirror-symmetric scene — a mark with two readings; mirroring the mesh picks one, alternating the diagonals leaves 5×10⁻¹⁵, and the switch was left in the demo page rather than quietly removed. Carried by two adjacent sections: the mark and its two readings, then the test and the correction)*  [demo]
+10. What did this chapter actually settle, and can I measure with this thing?  *(one dial decides whether the world behaves the same every way; we can tell coarse from broken; and that is what calibration is — the unevenness measured, the symmetries checked)*
 
 ## 11 · What does pushing on it cost?
 

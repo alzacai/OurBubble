@@ -265,8 +265,12 @@ cargo run --release -p viz --bin gen_synthesis -- "$(git rev-parse --short HEAD)
 **Registered rungs.**
 
 - warp-1 1.5 — lattice-matched isotropy
+- 7.1 — the fair dial's unevenness is exact, and fairness and roundness are two knobs
+- 8.14 and 8.18 — exactly round positive settings at finer grain, and the cost of roundness measured
 - warp-1 1.7 — blind dispersion in five directions
 - warp-3 3.5 — the demo's mesh asymmetry, and its repair
+
+**Two readings of the fair dial, kept together.** Rung 7.1's **3/5** is the uniform setting's cone anisotropy on the *rule graph* — the fourteen-neighbour pattern at a dot — and its finding that no positive reweighting of that pattern nulls it stands. Rungs 8.14 and 8.18 then asked the same question at the mesh's true resolution and found positive settings that are exactly round (derived from the geometry, not searched), and measured what the roundest of them costs in the record's own fairness functional: 0.086% of it. The ledger's own words are that both statements coexist. The chapter quotes them that way — *two different knobs, and the trade is nearly free* — and nowhere calls the record's spectral quantity an entropy of anything but the toy's graph; the record's fence on it is *never a physical entropy*, and the prose keeps the word out.
 
 **Lab entries.** Each carries its own `spec.md` (the question, registered first), `eval.md` (the verdict) and `PROVENANCE.md`.
 
@@ -292,6 +296,8 @@ cargo run --release -p viz --bin gen_synthesis -- "$(git rev-parse --short HEAD)
 |---|---|
 | `22.4%` | [`book/chapters/01-the-light-cone/chapter.md`](record/book/chapters/01-the-light-cone/chapter.md) |
 | `2.2%` | [`book/chapters/01-the-light-cone/chapter.md`](record/book/chapters/01-the-light-cone/chapter.md) |
+| `3/5` | [`PREDICTIONS.md`](record/PREDICTIONS.md) |
+| `0.086%` | [`PREDICTIONS.md`](record/PREDICTIONS.md) |
 | `10.2` | [`book/chapters/01-the-light-cone/chapter.md`](record/book/chapters/01-the-light-cone/chapter.md) |
 | `1.00 ± 0.016` | [`book/chapters/01-the-light-cone/chapter.md`](record/book/chapters/01-the-light-cone/chapter.md) |
 | `33.2%` | [`book/chapters/01-the-light-cone/chapter.md`](record/book/chapters/01-the-light-cone/chapter.md) |

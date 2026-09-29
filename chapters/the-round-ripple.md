@@ -21,9 +21,8 @@ Which half is missing?
 Time you have. Ticks, all the same size, and you can count them — that is what the clock was for.
 
 Distance you do not have. Not because it is hard to measure, but because nothing in the object has
-ever been given a length. The dial exists; you met it on one tetrahedron, six lines and six
-settings, and you have already turned one of them and watched the rhythm change. But nobody has
-ever set it from anything real. It has been a knob with no reading on it.
+ever been given a length. The dial exists; you met it on one tetrahedron and have already turned
+it once and watched the rhythm change. But nobody has ever set it from anything real. It has been a knob with no reading on it.
 
 So before the world can be asked how fast, somebody has to say how far.
 
@@ -33,7 +32,7 @@ Doesn't counting steps already do that?
 
 <!-- beat the-round-ripple.2 -->
 
-It is worth sitting with why not, because "count the lines you crossed" sounds exactly like a ruler.
+Why not? Because "count the lines you crossed" sounds exactly like a ruler.
 
 Go back to how the object was built: the eight corners of a cube, sorted odd and even. Some of the
 lines in the finished thing run along the edges of those cubes. Others cut across their diagonals.
@@ -73,25 +72,39 @@ Set every line to the same weight and the ring comes out **lopsided**.
 
 It runs faster across the cube's diagonals than along its edges — so if you guessed the diagonals,
 you were right, and for the reason the last section gave: the counting treats a long step and a
-short one alike, so the long one covers more ground per tick. What ought to be a circle is stretched
-along the diagonals, and anything you aimed in this world would drift.
+short one alike, so the long one covers more ground per tick. Anything you aimed in this world
+would drift.
 
 Notice what happened. Weighting all the lines equally *looked* like assuming nothing; it was a
 strong assumption, quietly made — that an edge and a diagonal are the same length. The object never
 said that. We did, by choosing the setting that felt neutral.
 
-The number is what makes this more than a story, so here it is. Send a pulse from the middle, time
+Send a pulse from the middle, time
 its arrival along an edge direction, time its arrival along a diagonal, and compare the two speeds.
 If the ring were round they would be equal. They differ by **22.4%**.
 
 **[Open the data-true rings](record/lab/warp-1-move/0115-lattice-matched-isotropy/figures/isotropy.html)**
 — two rings, one per setting. The lopsided one is this section's; the other is the next section's.
 
-What if the dial is set from the shape instead?
+Couldn't we just be fairer about it?
+
+## Couldn't we just be fairer?
+
+<!-- beat the-round-ripple.5 -->
+
+No. The record tried the tempting repair — nudge the even weights here and there until the ring
+comes round — on the pattern of fourteen neighbours every dot sees. Worked out exactly rather than
+timed, the fair setting's unevenness there is **3/5**, and no nudging of positive weights takes it
+to zero. Fairness and roundness are two different knobs.
+
+At finer grain the record later found the roundest setting reachable from the fair one, and its
+cost in fairness: **0.086%**. Distinct knobs; the trade nearly free.
+
+So set it from the shape.
 
 ## The same dial, set from the geometry
 
-<!-- beat the-round-ripple.5 -->
+<!-- beat the-round-ripple.6 -->
 
 Measure the pieces of the object and weight each line by what it actually is. Same dial, same
 settings, no new machinery — a reading taken from the thing rather than assumed.
@@ -102,14 +115,14 @@ Both predictions were written down before either run — that the naive setting 
 uneven, and that the geometric one would at least halve it. That matters more than the numbers do,
 and it is the step people skip.
 
-The rounder of the two rings in the last section's figure is this one. The pair of them, together,
-is the difference between an assumption and a reading.
+The rounder ring in the earlier figure is this one; the pair is the difference between an
+assumption and a reading.
 
 But 2.2% is not zero. What is it?
 
 ## Coarse, or broken?
 
-<!-- beat the-round-ripple.6 -->
+<!-- beat the-round-ripple.7 -->
 
 A sceptic should push on the residual, and there are exactly two things it could be: the world
 really is slightly uneven, or the grid is too coarse to draw a smooth circle on.
@@ -126,16 +139,16 @@ a machine run that test without anyone's thumb on the scale?
 
 ## Hand it to something that cannot hope
 
-<!-- beat the-round-ripple.7 -->
+<!-- beat the-round-ripple.8 -->
 
 It can, and this is where the book acquires the instrument it uses for the rest of its length.
 
 Run the sweep again in five directions at once and hand the timings to a blind fitter: a program
-told nothing about what it is looking at — not the expected law, not which arm was which. It picks
-from a menu written down beforehand and reports how far ahead of the runner-up it finished.
+told nothing about what it is looking at. It picks from a menu written down beforehand and reports
+how far ahead of the runner-up it finished.
 
 It picked the straight-line law in all five directions, and by a wide margin: its score beat the
-runner-up — a square-root law — by about a quarter every time, which for a fit quality is a rout.
+runner-up — a square-root law — by about a quarter every time.
 The speed it returned agrees across directions to within a couple of percent, and that spread
 *shrinks* as the ripples get gentler. Which is the signature of a coarse grid.
 
@@ -149,10 +162,10 @@ Could a picture be lopsided because of the instrument itself?
 
 ## An interlude: the shadow of the mesh
 
-<!-- beat the-round-ripple.8 -->
+<!-- beat the-round-ripple.9 -->
 
-It could, and it was — on a page of ours anyone could open. A detour, then, before the chapter
-closes, because it is the child in the yard with the stick turned around on us.
+It could, and it was — on a page of ours anyone could open: the child in the yard with the stick,
+turned around on us.
 
 There is a public demonstration page: a ripple through two gaps, making bands on the far side. It
 ran that way for months. The scene is mirror-symmetric by construction — two identical gaps, one
@@ -168,7 +181,7 @@ Which one? The readings differ, so a test can tell them apart.
 
 ## Mirror the mesh
 
-<!-- beat the-round-ripple.8 -->
+<!-- beat the-round-ripple.9 -->
 
 Cutting a square into triangles means choosing which way the diagonals lean. Lean them all one
 way, then flip the scene about the axis through the source and between the gaps: the scene lands on
@@ -194,7 +207,7 @@ So what did the chapter settle?
 
 ## What this chapter settled
 
-<!-- beat the-round-ripple.9 -->
+<!-- beat the-round-ripple.10 -->
 
 Not that the little world has light in it. It does not.
 
