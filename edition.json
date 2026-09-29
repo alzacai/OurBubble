@@ -41,7 +41,8 @@
         "book/chapters/01-the-light-cone/chapter.md",
         "book/chapters/03-the-shield/chapter.md",
         "lab/warp-1-move/0117-dispersion-isotropy/figures/discovery.html",
-        "PREDICTIONS.md"
+        "PREDICTIONS.md",
+        "lab/warp-1-move/0117-dispersion-isotropy/eval.md"
       ]
     },
     "the-bubble-and-its-bill": {
@@ -176,7 +177,7 @@
         "title": "Is it round? — the dial, set twice",
         "rungs": [
           "warp-1 1.5 — lattice-matched isotropy",
-          "7.1 — the fair dial's unevenness is exact, and fairness and roundness are two knobs",
+          "7.1 — the fair dial's lopsidedness is exact, and fair and round are two different things to ask of one setting",
           "8.14 and 8.18 — exactly round positive settings at finer resolution, and the fairest of them priced",
           "warp-1 1.7 — blind dispersion in five directions",
           "warp-3 3.5 — the demo's mesh asymmetry, and its repair"
@@ -228,6 +229,14 @@
             "source": "book/chapters/01-the-light-cone/chapter.md"
           },
           {
+            "text": "0.9996",
+            "source": "lab/warp-1-move/0117-dispersion-isotropy/eval.md"
+          },
+          {
+            "text": "0.754",
+            "source": "lab/warp-1-move/0117-dispersion-isotropy/eval.md"
+          },
+          {
             "text": "33.2%",
             "source": "book/chapters/01-the-light-cone/chapter.md"
           },
@@ -240,7 +249,7 @@
             "source": "book/chapters/03-the-shield/chapter.md"
           }
         ],
-        "note": "**Two readings of the fair dial, kept together.** Rung 7.1's **3/5** is the uniform setting's cone anisotropy on the *rule graph* — the pattern of lines that meets at a dot of the Container — and its finding that no positive reweighting of that pattern nulls it stands. That is the one number the chapter quotes, and it is a different measure from the chapter's 22.4% and 2.2%, which were timed on the Container's plainer relative.\n\nRungs 8.14 and 8.18 then asked the same question at the mesh's true resolution and found positive settings that are exactly round (derived from the geometry, not searched). 8.18 fixed exact roundness and asked for the fairest setting that keeps it: that one gives up **0.086%** of the record's own fairness measure against the uniform dial. The ledger's own words are that both statements coexist; the chapter says *two different things to ask of one setting* and leaves the price of asking for both to this page. Nowhere does the book call the record's spectral quantity an entropy of anything but the toy's graph — the record's fence on it is *never a physical entropy*, and the prose keeps the word out."
+        "note": "**Two readings of the fair dial, kept together.** Rung 7.1's **3/5** is the uniform setting's lopsidedness — its cone anisotropy — on the *rule graph*, the pattern of lines that meets at a dot of the Container, and its finding stands: within the family of positive reweightings it tried on that pattern, none nulls it. The chapter quotes it, and it is a different measure from the chapter's 22.4% and 2.2%, which were timed on the Container's plainer relative.\n\nRungs 8.14 and 8.18 then asked the same question at the mesh's true resolution — every setting, not one family — and found positive settings that are exactly round, derived from the geometry rather than searched. 8.18 fixed exact roundness and asked for the fairest setting that keeps it: that one gives up **0.086%** of the record's own fairness measure against the uniform dial. The ledger's own words are that both statements coexist, and the sense of it is the scope: 7.1 nudged within one coarse family and found no round setting; 8.18 searched them all and found round settings that cost almost nothing. The chapter says *two different things to ask of one setting* and leaves the price of asking for both to this page."
       },
       "the-bubble-and-its-bill": {
         "title": "What does pushing on it cost? — the shaped push and its bill",
