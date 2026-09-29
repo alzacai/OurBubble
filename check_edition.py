@@ -528,6 +528,13 @@ def check_rendered(
             check_rendered_bold(
                 str(rendered_path.relative_to(EDITION_DIR)), html, anchored, errors
             )
+            # The same binding on the built page, outside the napkin spans, so a value the build
+            # moved is refused where the reader meets it.
+            for hit in beside_hits(
+                NAPKIN_SPAN.sub(" ", html),
+                [dict(quote) for quote in dict(sections[slug]).get("record_quotes", [])],
+            ):
+                errors.append(f"{rendered_path.relative_to(EDITION_DIR)}: {hit}")
 
         for raw_target in HTML_LINK.findall(html):
             target = raw_target.strip().strip("<>")
@@ -592,6 +599,132 @@ def check_rendered_bold(label: str, html: str, anchored: Sequence[str], errors: 
             f"chapter's appendix section nor inside a napkin block — quote a value the appendix "
             f"carries, compute it in a napkin, or drop the emphasis"
         )
+
+
+# An emphasised value, in either shape a page has it: `**3/5**` in the source, `<strong>3/5</strong>`
+# once built. One pattern for both, so the binding below reads the same text the reader is shown
+# whichever side of the build it is standing on. The source shape may not begin or end on a space:
+# Markdown does not open bold on one, and without that rule the closing marks of a bold lead-in
+# ("**…kept together.** Rung 7.1's **0.086%**") pair with the value's opening marks, the digit in
+# "7.1" satisfies the pattern, and the value is never marked — the mutation that proved the guard on
+# the appendix note refused one swapped value and passed the other (2026-09-29).
+EMPHASIS = re.compile(r"\*\*(?=\S)([^*\n]*\d[^*\n]*?)(?<=\S)\*\*|<strong>(.*?)</strong>", re.DOTALL)
+# The marker `beside_hits` drops after an emphasised quotation so the sentence it lands in can be
+# found again once the page has been cut into sentences and normalised: letters and digits only,
+# because that is all the normalisation keeps, and a shape no prose contains.
+BESIDE_MARK = "zzbeside{}zz"
+
+
+def beside_words(quote: Dict[str, object]) -> List[str]:
+    """A quotation's `beside` words, normalised the way `sentences()` normalises a page. **Pure.**"""
+    declared = quote.get("beside", [])
+    if isinstance(declared, str):
+        declared = [declared]
+    return [NOT_WORD_OR_STOP.sub(" ", str(word).casefold()).strip() for word in declared]
+
+
+def beside_hits(text: str, quotes: Sequence[Dict[str, object]]) -> List[str]:
+    """Every emphasised quotation that stands beside none of its declared words. **Pure.**
+
+    Anchoring asks whether an emphasised number is *a member of* the chapter's quotation list, and
+    membership says nothing about which noun the number sits beside. A proofreader swapped `3.8×`
+    and `5×10⁻¹⁵` between their sentences on tranche G and tier 0 stayed green (#88); the whole-book
+    read swapped `70.5288°` and `7.3561°` the same way (#103); two rounds on the fair-dial beat
+    swapped `3/5` and `0.086%` in the chapter and then in the appendix note. Four findings of one
+    hole, each graded on the reader being handed a value against the wrong noun.
+
+    This is the writing contract's rule 4 outside the napkin blocks, where `REFUSED_IN_CAPTION`
+    already closes it: a value is **asserted inside the phrase that says what it is a value of**. A
+    record quotation may declare `beside`: one or more words, any one of which must share the
+    *sentence* with the quotation wherever the quotation is emphasised — chapter source, built
+    page, or the appendix section's own prose. `3/5` beside *lopsidedness* and `0.086%` beside
+    *fairest* cannot trade places, because the sentence each lands in then carries the wrong noun.
+
+    The sentence, not a character window, because `sentences()` already learned that lesson for the
+    exclusion guard: the word must be in the same sentence, and a sentence boundary between the noun
+    and the number is a refusal, not a near miss (see the self-test). Words are matched whole on the
+    normalised sentence, so *fair* does not vouch for *fairest* unless it is declared.
+
+    **What it cannot see, stated because a limit is only a limit when written down.** It binds only
+    the quotations that declare `beside`, so an undeclared pair can still trade places — the
+    declaration is the writer's, and the list of bound quotations is printed on the pass line so a
+    reader can see how many are held. And two quotations that legitimately share a noun (`22.4%`
+    and `2.2%` both *differ*) cannot be told apart by this; that pair stays the reader's.
+    """
+    bound = [(index, str(quote["text"]), beside_words(quote))
+             for index, quote in enumerate(quotes) if quote.get("beside")]
+    bound = [(index, value, ws) for index, value, ws in bound if ws]
+    if not bound:
+        return []
+
+    def mark(found: "re.Match[str]") -> str:
+        inner = found.group(1) if found.group(1) is not None else found.group(2)
+        plain = TAG.sub("", inner)
+        marks = "".join(f" {BESIDE_MARK.format(index)} "
+                        for index, value, _ in bound if value in plain)
+        return found.group(0) + marks
+
+    hits: List[str] = []
+    for sentence in sentences(EMPHASIS.sub(mark, text)):
+        held = f" {sentence} "
+        for index, value, ws in bound:
+            if f" {BESIDE_MARK.format(index)} " not in held:
+                continue
+            if any(f" {word} " in held for word in ws):
+                continue
+            shown = " ".join(w for w in sentence.split() if not w.startswith("zzbeside"))
+            hits.append(
+                f"emphasised {value!r} stands beside none of {ws!r} in the sentence that carries "
+                f"it — {shown[:110]!r} — so the value is against the wrong noun, or the noun moved"
+            )
+    return hits
+
+
+def _beside_self_test(errors: List[str]) -> None:
+    """Prove the binding bites, in triples, before it is allowed to check the book.
+
+    Each row is a text that must pass, the same text with the noun taken out, which must be refused,
+    and the two values traded between their sentences, which must be refused twice. A fourth and
+    fifth case hold the boundary: the built-page shape (tags and a hard wrap inside the sentence)
+    passes, and the noun in the *previous* sentence does not vouch — the binding is to the sentence,
+    or it is to nothing.
+    """
+    quotes = [
+        {"text": "3/5", "source": "x", "beside": ["lopsidedness"]},
+        {"text": "0.086%", "source": "x", "beside": ["fairest", "fairness"]},
+        {"text": "22.4%", "source": "x"},
+    ]
+    passes = [
+        "That pattern's lopsidedness is **3/5**, and no nudge takes it to zero. The fairest of "
+        "them gives up **0.086%** of it. They differ by **22.4%**.",
+        "<p>That pattern’s lopsidedness is <strong>3/5</strong>, and no\nnudge takes it to "
+        "zero.</p>\n<p>The fairest of them gives up <strong>0.086%</strong> of it.</p>",
+    ]
+    for text in passes:
+        stray = beside_hits(text, quotes)
+        if stray:
+            errors.append(f"self-test: the beside guard refuses a value standing beside its own "
+                          f"noun: {stray}")
+    refused = [
+        ("That pattern's unevenness is **3/5**, and no nudge takes it to zero.", 1,
+         "the noun taken out"),
+        ("That pattern's lopsidedness is **0.086%**. The fairest of them gives up **3/5** of it.", 2,
+         "the two values traded between their sentences"),
+        ("Lopsidedness is the word. The value there is **3/5**.", 1,
+         "the noun in the sentence before, which does not vouch"),
+        ("The fair setting gives up **0.086%** of it.", 1,
+         "a word that is only a prefix of the declared one"),
+        ("**Kept together.** Rung 7.1's **0.086%** is the anisotropy on the pattern.", 1,
+         "a value after a bold lead-in, whose closing marks must not pair with the value's opening "
+         "ones"),
+    ]
+    for text, expected, why in refused:
+        hits = beside_hits(text, quotes)
+        if len(hits) != expected:
+            errors.append(f"self-test: the beside guard does NOT refuse {why} — expected "
+                          f"{expected} hit(s) on {text!r}, got {len(hits)}")
+    if beside_hits("They differ by **22.4%**, and nothing else.", quotes):
+        errors.append("self-test: the beside guard fires on a quotation that declares no `beside`")
 
 
 RENDERED_H1 = re.compile(r'<h1 id="[^"]*"[^>]*>(?P<inner>.*?)</h1>', re.DOTALL)
@@ -1698,6 +1831,11 @@ def check_appendix(
                 errors.append(f"{label}: quotation source is absent: {source}")
             elif text not in source_path.read_text(encoding="utf-8"):
                 errors.append(f"{label}: {text!r} is not carried by declared source {source}")
+        # The section's own prose (its `note`) may emphasise a quotation too, and a value there is
+        # against the same noun it is against in the chapter — the fair-dial round found the swap
+        # in the note after the chapter had been fixed.
+        for hit in beside_hits(body, [dict(q) for q in section.get("record_quotes", [])]):
+            errors.append(f"{label}: {hit}")
 
     # The appendix reads in the book's voice, so it answers to the book's prose standard. Two earlier
     # attempts to wire these in matched nothing and failed silently, which is why they are asserted
@@ -1880,6 +2018,9 @@ def check_chapter(
                 f"appendix section for this chapter — either quote a value the appendix carries, or "
                 f"tell it in story form without emphasis"
             )
+    # …and an anchored value that declares its noun must stand beside it (`beside_hits`).
+    for hit in beside_hits(markdown, [dict(q) for q in section.get("record_quotes", [])]):
+        errors.append(f"{relative_file}: {hit}")
 
     # Every chapter points at its own appendix section, **by slug**: an anchor no reorder can stale.
     pointer = f"({Path(str(APPENDIX_FILE)).name}#s-{slug})"
@@ -2257,6 +2398,7 @@ def main() -> int:
     # figure and quotation source is "missing", and a hundred errors saying that would bury the one
     # that explains why.
     _status_self_test(errors)
+    _beside_self_test(errors)
     pin = status(errors, "record", lambda: check_record(manifest, errors))
     if not RECORD_DIR.exists():
         return report(errors, [], {}, manifest, args)
@@ -2413,9 +2555,14 @@ def report(
     quote_count = sum(
         len(dict(section).get("record_quotes", [])) for section in dict(sections).values()
     )
+    bound_count = sum(
+        1 for section in dict(sections).values()
+        for quote in dict(section).get("record_quotes", []) if dict(quote).get("beside")
+    )
     print(
         f"Our Bubble edition check passed: {len(entries)} chapters + the appendix, "
-        f"{quote_count} record quotations anchored in the appendix, "
+        f"{quote_count} record quotations anchored in the appendix, {bound_count} of them bound "
+        f"beside the word that says what they are a value of, "
         f"{len(list(manifest.get('forbidden_probe_texts', [])))} exclusion probes refused, "
         f"{len(list(manifest.get('retired_phrasings', [])))} retired phrasings absent from every "
         f"chapter in any wrapping, punctuation, markup or hidden comment — they are matched on the "
