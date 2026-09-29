@@ -33,11 +33,11 @@ about the same point in the day, whether or not anybody is watching a shadow. On
 one after it is all the time-keeping this needs — a then and a now.
 
 Now there are two marks — each where the light stopped — and a gap between them, and the gap is
-a certain number of finger-widths across. That number came from the world rather than from her. She
-could have wished it smaller and it would not have moved. All she did was write it down.
+a certain number of finger-widths across. That number is the world's, not hers. Her part was to
+write it down.
 
-That is the whole of what a measurement is. Not an instrument, not a talent, not a laboratory — just
-something that changes, and someone willing to record by how much.
+That is the whole of what a measurement is: something that changes, and someone willing to record
+by how much.
 
 So she has a number. Does she have an answer?
 
@@ -64,13 +64,12 @@ Did he have to be a genius?
 Around 240 BCE a man in Alexandria did the next thing, starting from almost exactly this.
 
 Eratosthenes of Cyrene ran the library at Alexandria, the largest collection of books in the world.
-What the measurement asked of him was smaller than that. It asked for an upright post, the length of
-the shadow it threw at noon, a distance somebody had already walked, and one multiplication — and
-you could do that multiplication now, in your head, if you had the two numbers. The library is the
-part of him you can leave out, which is what makes this a good first example: you would not have
-needed to be him.
+The measurement asked for none of it. It needed an upright post, the length of its shadow at noon, a
+distance somebody had already walked, and one multiplication — the kind you could do in your head,
+given the shadow and the distance. So, no: anyone with those two numbers could have done it. The
+library is the part of him you can leave out, and that is what makes him a good first example.
 
-What he had was a discrepancy he could not explain.
+What he did need was a puzzle: a discrepancy he could not explain.
 
 ## Two posts, one shadow
 
@@ -95,54 +94,34 @@ The ground between the two towns is therefore not flat. It curves. But by how mu
 
 <!-- beat the-shadow.6 -->
 
-Here is where he turned a shape into a number, and the number is what made the shape able to be
-wrong.
+Here the shape became a number, which is what made it able to be wrong.
 
 He measured the angle of the Alexandria shadow, and it came out at about a fiftieth of a full turn.
-That angle is doing all the work, because it is also the angle between the two towns as seen from
-the centre of the Earth. If a fiftieth of the circle separates them, then the whole circle is fifty
-times the distance between them.
+An upright post points at the centre of the Earth, so the slant of the sunlight against the
+Alexandria post is the slant of Alexandria itself, seen from the centre, away from Syene — where
+post and sunlight lined up. If a fiftieth of the circle separates the two towns,
+the whole circle is fifty times the distance between them.
 
-He still needed that distance, and here the story is more ordinary than people expect: he looked it
-up. The figure in use for Alexandria to Syene was around five thousand stadia. Where that figure
-came from, no ancient source says — the usual guess is the bematists, professional pacers paid to
-walk between places and count their steps, because pacing was how a kingdom knew its own size.
+He still needed that distance, and he looked it up: the figure in use for Alexandria to Syene was
+around five thousand stadia.
 
-Fifty times five thousand. One multiplication, and he had a size for the Earth.
+Fifty times five thousand: one multiplication, and he had a size for the Earth — from two shadows,
+a walked distance, and the geometry of a circle. He was close to the figure we have today, and
+everything he used, a child in a yard could have used.
 
-He was close. That is not the interesting part.
-
-## The order he did things in
-
-<!-- beat the-shadow.7 -->
-
-Notice the order. He started from something he could not explain: one post with a shadow, one post
-without. He proposed the smallest shape that would account for it — a curved ground. Then he
-committed that shape to a number, an angle anyone in Alexandria could go and read off the same
-post, and a number that could have come out absurd and taken the shape down with it. Only when
-it survived did he multiply.
-
-The steps, in order:
-
-1. Notice something you cannot explain.
-2. Propose the smallest structure that would explain it.
-3. Say, in advance, what result would prove the proposal wrong.
-4. Check. Keep the answer, especially when it is no.
-
-Saying in advance what would prove you wrong is the one people skip. It is uncomfortable, it slows
-everything down, and it is the only step that makes the others worth anything. Leave it out and what
-you have is a story that fits — and stories that fit are cheap, because you can always find one
-after you know the answer.
+He kept an order this book keeps: the shape first, then a number that could have come out absurd
+and sunk it, and only then the multiplication.
 
 So put the child back in the yard, with her stick and her two marks, and ask what she is still
 missing.
 
 ## Back to the child
 
-<!-- beat the-shadow.8 -->
+<!-- beat the-shadow.7 -->
 
-She has done the noticing, and she has a number for how much. What is still to come is small: a
-structure she can hold in her head, and a statement of what it would do that could turn out false.
+She has done the noticing, and she has a number for how much. What is still to come is short to
+say: a structure she can hold in her head, and a statement of what it would do that could turn out
+false.
 
 That is the hard part, and it is what the rest of this book does: builds a small world a little at a
 time, says what it should do before it does it, and lets it answer. The one thing to carry in with

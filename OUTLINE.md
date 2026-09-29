@@ -64,9 +64,8 @@ reader every time instead of explained to her once.
 3. So what is a measurement, exactly, and why is it not yet an answer?
 4. Who first did the next thing with a shadow — and did you have to be a genius?  *(Eratosthenes: he ran the library at Alexandria; the measurement used none of it — one multiplication)*
 5. Two posts, same noon, one shadow: what does that rule out?  *(a flat world)*
-6. And how much does the ground curve — what did he actually do, step by step?  *(a fiftieth of a turn; the looked-up distance; fifty times five thousand)*
-7. What was the order he did things in — and which step do people skip?  *(notice · smallest shape · say what would prove it wrong · check, keep the no)*
-8. Back to her two marks: what is she still missing?  *(a reason to expect one answer rather than another — the hard part, and the book)*
+6. And how much does the ground curve — what did he actually do, step by step?  *(a fiftieth of a turn; the looked-up distance; fifty times five thousand — the size of the Earth from two shadows and the geometry of a circle; and the order he kept, which the book keeps: the shape, then the number that could sink it, then the multiplication)*
+7. Back to her two marks: what is she still missing?  *(a reason to expect one answer rather than another — the hard part, and the book)*
 
 ## 4 · A few thousand years of sharper shadows
 
