@@ -603,8 +603,12 @@ def check_rendered_bold(label: str, html: str, anchored: Sequence[str], errors: 
 
 # An emphasised value, in either shape a page has it: `**3/5**` in the source, `<strong>3/5</strong>`
 # once built. One pattern for both, so the binding below reads the same text the reader is shown
-# whichever side of the build it is standing on.
-EMPHASIS = re.compile(r"\*\*([^*\n]*\d[^*\n]*)\*\*|<strong>(.*?)</strong>", re.DOTALL)
+# whichever side of the build it is standing on. The source shape may not begin or end on a space:
+# Markdown does not open bold on one, and without that rule the closing marks of a bold lead-in
+# ("**…kept together.** Rung 7.1's **0.086%**") pair with the value's opening marks, the digit in
+# "7.1" satisfies the pattern, and the value is never marked — the mutation that proved the guard on
+# the appendix note refused one swapped value and passed the other (2026-09-29).
+EMPHASIS = re.compile(r"\*\*(?=\S)([^*\n]*\d[^*\n]*?)(?<=\S)\*\*|<strong>(.*?)</strong>", re.DOTALL)
 # The marker `beside_hits` drops after an emphasised quotation so the sentence it lands in can be
 # found again once the page has been cut into sentences and normalised: letters and digits only,
 # because that is all the normalisation keeps, and a shape no prose contains.
@@ -710,6 +714,9 @@ def _beside_self_test(errors: List[str]) -> None:
          "the noun in the sentence before, which does not vouch"),
         ("The fair setting gives up **0.086%** of it.", 1,
          "a word that is only a prefix of the declared one"),
+        ("**Kept together.** Rung 7.1's **0.086%** is the anisotropy on the pattern.", 1,
+         "a value after a bold lead-in, whose closing marks must not pair with the value's opening "
+         "ones"),
     ]
     for text, expected, why in refused:
         hits = beside_hits(text, quotes)
