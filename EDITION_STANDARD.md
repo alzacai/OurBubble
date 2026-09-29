@@ -216,6 +216,24 @@ once and was caught by a reader rather than a check (2026-09-02):
    read-back with no noun to hold the number to. Say what the phrase is load-bearing for, or drop
    the leading repetition instead.
 
+   **Outside the napkin blocks, a quotation is bound to its noun the same way** (2026-09-29, the
+   fair-dial beat, after the swap was found on tranche G (#88), in the whole-book read (#103) and
+   twice more on one beat). Anchoring asks whether an emphasised number is *a member of* the
+   chapter's `record_quotes`; membership says nothing about which noun it sits beside, so two
+   anchored values trade places and the build stays green. A record quotation may therefore
+   declare **`beside`**: one or more words, any one of which must share the *sentence* with the
+   quotation wherever it is emphasised — in the chapter's source, on its built page, and in the
+   appendix section's own note. `3/5` beside *lopsidedness* and `0.086%` beside *fairest* cannot
+   be swapped, because the sentence each lands in then carries the wrong noun, and
+   `check_edition.py` refuses it by name. The binding is to the sentence: the noun in the sentence
+   before does not vouch, and a word that is only a prefix of the declared one does not either
+   (`beside_hits`, proved by its own triples before it is allowed to check the book). Its limit,
+   written here so nobody relies on the opposite: it binds only the quotations that declare a
+   word — the pass line counts them — and two values that honestly share a noun (`22.4%` and
+   `2.2%` both *differ*) cannot be told apart by it. The corollary above applies to a bound
+   sentence exactly as to a rendered phrase: the noun is load-bearing, and a wording edit that
+   moves it out of the sentence is refused rather than merely regretted.
+
 ### The exemption, and exactly how far it reaches
 
 A napkin's numbers are **not** in the appendix, and must not be: they are computed, not quoted. So
