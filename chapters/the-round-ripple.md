@@ -38,8 +38,6 @@ Doesn't counting steps already do that?
 
 <!-- beat the-round-ripple.2 -->
 
-Sit with why not, because "count the lines you crossed" sounds like a ruler.
-
 Go back to the cube the world is built from. In the relative the record ran, its lines run three
 ways: along the cube's edges, across its faces, and through its middle from corner to corner. In the
 Container you built, a line is a face diagonal or the long axis of a shape between. Either way some
@@ -71,8 +69,8 @@ One line is enough. Commit to a direction.
 Ours — one for this setting, one for the next — are in the record from before the run; neither
 said which way, so this half is yours alone.
 
-This is the ritual for the rest of the book, and it is not a teaching trick. Once you have read a
-number it is hard to remember not having known it.
+This is the ritual for the rest of the book. Once you have read a number it is hard to remember not
+having known it.
 
 ## The obvious setting
 
@@ -82,8 +80,8 @@ Set every line to the same weight and the ring comes out **lopsided**.
 
 It runs faster corner to corner through the cube than along its edges — so if you guessed corner to
 corner, you were right, and for the reason the last section gave: the counting treats a long step
-and a short one alike, so the long one covers more ground per tick. What ought to be a circle is
-stretched corner to corner, and anything you aimed in this world would drift.
+and a short one alike, so the long one covers more ground per tick. Anything you aimed in this
+world would drift.
 
 Weighting all the lines equally *looked* like assuming nothing; it was a
 strong assumption, quietly made — that an edge and a diagonal are the same length. The object never
@@ -94,16 +92,29 @@ its arrival along an edge direction, time its arrival along a diagonal, and comp
 If the ring were round they would be equal. They differ by **22.4%**.
 
 **[Open the data-true rings](record/lab/warp-1-move/0115-lattice-matched-isotropy/figures/isotropy.html)**
-— two rings, one per setting. The lopsided one is this section's; the other is the next section's.
+— two rings, one per setting. The lopsided one is this section's; the round one comes two sections
+on.
 
-What if the dial is set from the shape instead?
+Couldn't we just be fairer about it?
 
-## The same dial, set from the geometry
+## Couldn't we just be fairer?
 
 <!-- beat the-round-ripple.5 -->
 
+No. We tried the tempting repair — nudge the even weights until the ring comes round — on the
+Container itself this time, on the pattern of lines that meets at every dot, and the record has it.
+Not the timed measure; an exact one: that pattern's lopsidedness is **3/5**, and no nudge that
+keeps every line counting takes it to zero. Fair and round are two different things to ask of one
+setting.
+
+So set it from the shape.
+
+## The same dial, set from the geometry
+
+<!-- beat the-round-ripple.6 -->
+
 Measure the pieces of the object and weight each line by what it actually is. Same dial, same
-settings, no new machinery — a reading taken from the thing rather than assumed.
+settings — a reading taken from the thing rather than assumed.
 
 The two speeds now differ by **2.2%**: about ten times less.
 
@@ -111,19 +122,19 @@ What we wrote down before either run was that the obvious setting would be plain
 the reading from the shape would at least halve it. That matters more than the numbers do, and it is
 the step people skip.
 
-The rounder of the two rings in the last section's figure is this one. The pair of them, together,
-is the difference between an assumption and a reading.
+The rounder ring in that figure is this one: the pair is the difference between an assumption and
+a reading.
 
 But 2.2% is not zero. What is it?
 
 ## Coarse, or broken?
 
-<!-- beat the-round-ripple.6 -->
+<!-- beat the-round-ripple.7 -->
 
 A sceptic should push on the residual, and there are two things it could be: the world is slightly
 uneven, or the grid is too coarse to draw a smooth circle on.
 
-Those sound like the same complaint. They are not, and telling them apart needs no judgement.
+They are not the same complaint, and telling them apart needs no judgement.
 
 A coarse grid gets *better* with bigger, gentler ripples: a long, lazy wave stops noticing the
 graininess underneath it. A genuine unevenness does
@@ -135,7 +146,7 @@ machine run it without anyone's thumb on the scale?
 
 ## Hand it to something that cannot hope
 
-<!-- beat the-round-ripple.7 -->
+<!-- beat the-round-ripple.8 -->
 
 It can, and this is where the book acquires an instrument it uses again.
 
@@ -159,7 +170,7 @@ Could a picture be lopsided because of the instrument itself?
 
 ## An interlude: the shadow of the mesh
 
-<!-- beat the-round-ripple.8 -->
+<!-- beat the-round-ripple.9 -->
 
 It could, and it was — on a page of ours anyone could open. A detour before the chapter closes: it
 is the child in the yard with the stick turned around on us.
@@ -171,14 +182,13 @@ matched. One came out **3.8×** brighter than the other.
 
 That is a mark, in the sense her two scratches in the dirt were: a number nobody chose. And like
 hers it is mute. Two readings fit it equally well. Either what
-the ripple does at the gaps really is lopsided, or the thing doing the measuring is, and the picture
-is faithfully reporting the shape of what it travelled on rather than the shape of the question.
+the ripple does at the gaps really is lopsided, or the thing doing the measuring is.
 
 Which one? The readings differ, so a test can tell them apart.
 
 ## Mirror the mesh
 
-<!-- beat the-round-ripple.8 -->
+<!-- beat the-round-ripple.9 -->
 
 The demo's world is flat — a sheet of squares cut into triangles, not the Container — and cutting a
 square into triangles means choosing which way the diagonals lean. Lean them all one way, then flip the scene about the axis through the source and between the gaps: the scene lands on
@@ -196,14 +206,13 @@ themselves — numerical noise. Suspect confirmed, by a run and not a story.
 — the same scene on both meshes, side by side.
 
 The switch between the two meshes was left in [the demo page](record/viz/doubleslit.html) rather
-than quietly removed — a defect of ours kept beside its repair, because roundness and mirrors get
-tested before later results are read.
+than quietly removed: a defect of ours, kept beside its repair.
 
 So what did the chapter settle?
 
 ## What this chapter settled
 
-<!-- beat the-round-ripple.9 -->
+<!-- beat the-round-ripple.10 -->
 
 Not that the little world has light in it.
 

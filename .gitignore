@@ -21,3 +21,8 @@ __pycache__/
 /tools/engine_emit/uniforge
 /tools/engine_emit/target/
 /tools/engine_emit/Cargo.lock
+
+# Reference material for image testing — the owner's own photographs and third-party imagery kept
+# beside the book to judge replacement art against. Nothing here is a chapter asset, nothing here is
+# published, and the build never walks it. See notes/the-fair-dial.md, "Art".
+/reference/
